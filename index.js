@@ -1,5 +1,3 @@
-    // Wait until HTML is fully loaded (because of defer, optional but safe)
-document.addEventListener("DOMContentLoaded", function() {
 
     const form = document.getElementById("studentForm");
     const tableBody = document.querySelector("#StudentTable tbody");
@@ -31,6 +29,7 @@ document.addEventListener("DOMContentLoaded", function() {
             tableBody.appendChild(row);
         });
     }
+
 
     // Save to localStorage
     function saveData() {
@@ -109,10 +108,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Initial render
     renderTable();
-});
-window.addEventListener("load", function () {
-    setTimeout(function () {
-        document.getElementById("loader").style.display = "none";
-        document.getElementById("mainContent").style.display = "block";
-    }, 2000); // 2 seconds delay
-});
+
+// window.addEventListener("load", function () {
+//     setTimeout(function () {
+//         document.getElementById("loader").style.display = "none";
+//         document.getElementById("mainContent").style.display = "block";
+//     }, 2000); // 2 seconds delay
+// });
