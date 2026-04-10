@@ -1,47 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Registration System</title>
     <link rel="stylesheet" href="index.css">
-    
+
 </head>
+
 <body>
 
-     <!-- Loader -->
-   <!-- <div id="loader">
+    <!-- Loader -->
+    <div id="loader">
         <div class="loader"></div>
-    </div> -->
-<header>🎓 Student <span><span>R</span>egistration</span> System</header>
-
-<div class="container">
-    <!-- Form -->
-    <form id="studentForm">
-        <input type="text" id="name" placeholder="Student Name" required>
-        <input type="text" id="studentId" placeholder="Student ID" required>
-        <input type="email" id="email" placeholder="Email ID" required>
-        <input type="text" id="contact" placeholder="Contact Number" required>
-        <button type="submit">Add / Update Student</button>
-    </form>
-
-    <!-- Table -->
-    <div class="table-container">
-        <table id="StudentTable">
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>ID</th>
-                    <th>Email</th>
-                    <th>Contact</th>
-                    <th>Actions</th>
-                </tr>
-            </thead>
-            <tbody></tbody>
-        </table>
     </div>
-</div>
-<script src="index.js"></script>
+
+    <div id="mainContent">
+
+        <header>🎓 Student <span><span>R</span>egistration</span> System</header>
+
+        <div class="container">
+            <!-- Form -->
+            <form id="studentForm">
+                <input type="text" id="name" placeholder="Student Name" required>
+                <input type="text" id="studentId" placeholder="Student ID" required>
+                <input type="email" id="email" placeholder="Email ID" required>
+                <input type="text" id="contact" placeholder="Contact Number" required>
+                <button type="submit">Add / Update Student</button>
+            </form>
+
+            <!-- Table -->
+            <div class="table-container">
+                <table id="StudentTable">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>ID</th>
+                            <th>Email</th>
+                            <th>Contact</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+    <script src="index.js"></script>
 </body>
 
 </html>
